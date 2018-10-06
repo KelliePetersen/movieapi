@@ -1,0 +1,9 @@
+<h1>Results Page</h1>
+
+<% if (data["Search"]) { %>
+<% data["Search"].forEach(function(movie) { %>
+  <li><%= movie["Title"] %></li>
+<% }) %>
+<% } else { %>
+  <p>Search field was empty or too vague.</p>
+<% }; %>

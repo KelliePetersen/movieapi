@@ -1,0 +1,14 @@
+<h1>Movie Search</h1>
+
+<form action="/results" method="GET">
+  <label for="search">The movie title includes...</label>
+  <input type="text" placeholder="e.g. Good Will" name="search">
+  <label for="year">Year of release:</label>
+  <input type="number" name="year">
+  <select name="type">
+    <option value="">Movies and TV Series</option>
+    <option value="movie">Movies</option>
+    <option value="series">Series</option>
+  </select>
+  <input type="submit" value="Search">
+</form>
